@@ -1,0 +1,1 @@
+Critical deadlock fixed: TryRedisReconnect called WITHOUT holding _redisLock, curl_global_init once via call_once, HttpWorker idempotent, reply drain frees context on failure, channel reuse, explicit includes, lock ordering _lock then _redisLock
